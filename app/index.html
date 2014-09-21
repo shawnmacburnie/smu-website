@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body id="app">
+    <script data-main="js/main" src="/js/vendor/requirejs/require.js"></script>
+
+    <div app-header></div>
+    <div class="container" ui-view></div>
+
+
+    <script type="text/javascript">
+    function logData(data) {
+        calenderEvents = data;
+    }
+    </script>
+    <script src="http://www.google.com/calendar/feeds/smu.csm%40gmail.com/public/full?alt=json-in-script&callback=logData&orderby=starttime&max-results=15&singleevents=true&sortorder=ascending&futureevents=true"></script>
+  </body>
+</html>

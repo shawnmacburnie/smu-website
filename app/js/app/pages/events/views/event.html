@@ -1,0 +1,9 @@
+<div class="jumbotron">
+    <h1>Events</h1>
+    <div ng-repeat="event in calenderEvents">
+        <h3>{{event.title.$t}}</h3>
+        <p><b>When:</b> <span date-format></span></p>
+        <p><b>Where:</b> {{event.gd$where[0].valueString}}</p>
+        <hr>
+    </div>
+</div>
