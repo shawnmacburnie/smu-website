@@ -1,4 +1,3 @@
-//On génère une config dédié à l'application pour pouvoir utiliser plusieurs APP sur une même page
 appRequire = require.config({
   shim: {
     underscore: {
@@ -25,7 +24,6 @@ appRequire = require.config({
   },
 
   paths: {
-    // Librairies bower
     underscore:         '/js/vendor/underscore/underscore',
     angular:            '/js/vendor/angular/angular',
     uiRouter:           '/js/vendor/angular/angular-ui-router',
@@ -58,6 +56,7 @@ appRequire([
   'app/pages/home/HomePage',
   'app/pages/events/EventPage',
 
+  'app/directives/mainView',
   'app/directives/dateFormat'
 ], function(){
     angular.bootstrap(document.getElementById('app'),['app']);
