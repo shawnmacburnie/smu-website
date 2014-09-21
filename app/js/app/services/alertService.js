@@ -7,6 +7,4 @@ define(['app/app'], function(app){
 			}
 		};
 	});
-
-	console.groupEnd();
 });
