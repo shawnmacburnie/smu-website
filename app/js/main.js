@@ -57,7 +57,8 @@ appRequire([
   'app/pages/events/EventPage',
 
   'app/directives/mainView',
-  'app/directives/dateFormat'
+  'app/directives/dateFormat',
+  'app/directives/accordionDirectives'
 ], function(){
     angular.bootstrap(document.getElementById('app'),['app']);
 });

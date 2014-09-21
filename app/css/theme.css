@@ -1,3 +1,7 @@
 body {
 	padding-top: 70px;
 }
+
+.no-decoration{
+    color: black;
+}

@@ -5,6 +5,4 @@ define(['app/app', 'i18n!app/nls/i18n'], function(app, i18n){
 			return i18n[input];
 		};
 	});
-
-	console.groupEnd();
 });
