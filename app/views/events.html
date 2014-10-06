@@ -1,0 +1,26 @@
+<ul class="nav nav-tabs nav-justified" role="tablist">
+  <li ng-class="{'active': upCommingEvent}"><a href="" ng-click="setUpcommingEvent()">Upcomming Events</a></li>
+  <li ng-class="{'active': previousEvent}"><a href="" ng-click="setPreviousEvent()">Previous Events</a></li>
+</ul>
+
+
+<div ng-include=""></div>
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default" ng-repeat="event in calenderEvents">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href-from-title>
+          {{event.title.$t}} (<span date-format="true"></span>)
+        </a>
+      </h4>
+    </div>
+    <div id-from-title class="panel-collapse collapse" ng-class="$first ? 'in': ''">
+      <div class="panel-body">
+        <span ng-hide="!event.gd$when[0] || previousEvent"><p><b>When:</b> <span date-format></span></p></span>
+        <span ng-hide="!event.gd$where[0] || previousEvent"><p><b>Where:</b> {{event.gd$where[0].valueString}}</p></span>
+        <span ng-hide="!event.content.$t"><p><b>About:</b> {{event.content.$t}}</p></span>
+        <span ng-if="!event.content.$t"><p>No Description Available</p></span>
+      </div>
+    </div>
+  </div>
+</div>
