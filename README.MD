@@ -12,12 +12,12 @@ Soon to come!
 
 ## How to run site for development
 
-#installing components
+###installing components
 ```bash
 npm install
 bower install
 ```
-#run server
+###run server
 ```bash
 grunt serve
 ```
