@@ -11,6 +11,13 @@ Soon to come!
 2) Facebook api to show most recent discussion of the society page.
 
 ## How to run site for development
+
+#installing components
+```bash
+npm install
+bower install
+```
+#run server
 ```bash
 grunt serve
 ```
